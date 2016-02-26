@@ -15,10 +15,10 @@ Table of contents
 Things to know:
 ---------------
 
-###Authentication :
+###Authentication: 
 Authentications are performed based on the AccountId of the user and the respective ApiKey.
 
-###API Key
+###API Key:
 - ApiKey is 16 character length key and it is required for all API calls
 
 ###Endpoints:
