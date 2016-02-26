@@ -18,7 +18,7 @@ Things to know:
 ###Authentication :
 Authentications are performed based on the AccountId of the user and the respective ApiKey.
 
-###ApiKey
+###API Key
 - ApiKey is 16 character length key and it is required for all API calls
 
 ###Endpoints:
