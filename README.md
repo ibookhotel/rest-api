@@ -15,7 +15,7 @@ Table of contents
 Things to know:
 ---------------
 
-###Authentication: 
+###Authentication :
 Authentications are performed based on the AccountId of the user and the respective ApiKey.
 
 ###API Key:
