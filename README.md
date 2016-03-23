@@ -40,9 +40,9 @@ Code expamles:
 
 ###PHP :
 
-Home method
+Home method (POST)
 
-  include("curlLib/curlWrap_v1.php");
+    include("curlLib/curlWrap_v1.php");
 
     // ************************** Get hompage data ********************
 
@@ -63,3 +63,11 @@ Home method
     echo '<pre>';
     print_r($apiResult);
     echo '</pre>';
+
+"accountID" and "apiKey" are required for all Api calls.
+"language": en me hr si ru de nl fr it cz sk hu pl
+
+Optional "countAccommodation" parameter count accommodations per destination.
+Optional "lowestPrice" parameter load lowest prices for accommodation.
+
+Note: Using "lowestPrice" and "countAccommodation" can increase response load time.
