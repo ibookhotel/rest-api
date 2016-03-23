@@ -6,8 +6,6 @@
      * The Curl Wrap is the entry point to all services.
      */
 
-
-    # Enter your domain name , user id and user api key
     define("REST_DOMAIN", "jsonapi/manage-booking.com");
 
     function curlWrap($entity, $data, $method, $content_type) {
