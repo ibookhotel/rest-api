@@ -11,8 +11,8 @@ Table of contents
   * [ApiKey](#api-key)
   * [Endpoints](#endpoints)
   
-**[Code expamles - PHP](#code-examples)**
-  * [Home](#home-method-)
+**[Code expamles - PHP](#code-examples-php)**
+  * [Home](#home-method-(post)-)
 
 Things to know:
 ---------------
@@ -38,7 +38,7 @@ Methods to retrieve data from the API require a POST request
 Code expamles - PHP:
 --------------------
 
-###Home method (POST) :
+###Home method (POST):
 
     include("curlLib/curlWrap_v1.php");
 
