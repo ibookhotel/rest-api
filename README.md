@@ -6,26 +6,13 @@ B2B, B2C and B2S platform for online booking of accommodation, transfers, excurs
 Table of contents
 -----------------
 
-**[Code expamles](#code-examples)**
-  * [PHP](#php)
-  
-
-Code expamles:
---------------
-
-###PHP :
-Authentications are performed based on the accountId of the user and the respective apiKey.
-{
-    "accountId": "2",
-    "apiKey":"o5ic8IZCZYPGgmgh"
-}
-
-
 **[Things to know](#things-to-know)**
   * [Authentication](#authentication-)
   * [ApiKey](#api-key)
   * [Endpoints](#endpoints)
   
+**[Code expamles](#code-examples)**
+  * [PHP](#php-)
 
 Things to know:
 ---------------
@@ -47,3 +34,32 @@ Note: All data is case-sensitive. Language, apiKey and other values are case sen
 
 ###POST request:
 Methods to retrieve data from the API require a POST request
+
+Code expamles:
+--------------
+
+###PHP :
+
+Home method
+
+  include("curlLib/curlWrap_v1.php");
+
+    // ************************** Get hompage data ********************
+
+    $entity = "homepage";
+    $input['data'] = array(
+        "accountId" => "2",
+        "apiKey" => "o5ic8IZCZYPGgmgh",
+        "language" => "en",
+        "popularDestinations" => "1"
+    );
+    $method = "POST";
+    $contentType = "application/json";
+    $input = json_encode($input);
+
+    $apiResult = curlWrap($entity, $input, $method, $contentType);
+    $apiResult = json_decode($apiResult, TRUE);
+
+    echo '<pre>';
+    print_r($apiResult);
+    echo '</pre>';
