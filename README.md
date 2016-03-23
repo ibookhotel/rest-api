@@ -8,7 +8,7 @@ Table of contents
 
 **[Things to know](#things-to-know)**
   * [Authentication](#authentication-)
-  * [apiKey](#api-key)
+  * [apiKey](#apikey)
   * [Endpoints](#endpoints)
   * [Post request](#post-request)
   
