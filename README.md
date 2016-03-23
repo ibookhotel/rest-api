@@ -11,8 +11,8 @@ Table of contents
   * [ApiKey](#api-key)
   * [Endpoints](#endpoints)
   
-**[Code expamles](#code-examples)**
-  * [PHP](#php-)
+**[Code expamles - PHP](#code-examples)**
+  * [Home](#home-method-)
 
 Things to know:
 ---------------
@@ -35,12 +35,10 @@ Note: All data is case-sensitive. Language, apiKey and other values are case sen
 ###POST request:
 Methods to retrieve data from the API require a POST request
 
-Code expamles:
---------------
+Code expamles - PHP:
+--------------------
 
-###PHP :
-
-Home method (POST)
+###Home method (POST) :
 
     include("curlLib/curlWrap_v1.php");
 
