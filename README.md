@@ -8,13 +8,14 @@ Table of contents
 
 **[Things to know](#things-to-know)**
   * [Authentication](#authentication-)
-  * [ApiKey](#api-key)
+  * [apiKey](#api-key)
   * [Endpoints](#endpoints)
+  * [Post request](#post-request)
   
 **[Code expamles (PHP)](#code-expamles---php)**
   * [Home](#home-method-post)
-  * [Search](#home-method-post)
-  * [Details](#home-method-post)
+  * [Search](#search-method-post)
+  * [Details](#details-method-post)
 
 Things to know:
 ---------------
