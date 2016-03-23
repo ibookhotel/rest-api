@@ -11,8 +11,10 @@ Table of contents
   * [ApiKey](#api-key)
   * [Endpoints](#endpoints)
   
-**[Code expamles - PHP](#code-examples-php)**
-  * [Home](#home-method-(post)-)
+**[Code expamles (PHP)](#code-expamles---php)**
+  * [Home](#home-method-post)
+  * [Search](#home-method-post)
+  * [Details](#home-method-post)
 
 Things to know:
 ---------------
@@ -42,7 +44,7 @@ Code expamles - PHP:
 
     include("curlLib/curlWrap_v1.php");
 
-    // ************************** Get hompage data ********************
+    // ************************** Get popular destinations  ********************
 
     $entity = "homepage";
     $input['data'] = array(
@@ -69,3 +71,34 @@ Optional "countAccommodation" parameter count accommodations per destination.
 Optional "lowestPrice" parameter load lowest prices for accommodation.
 
 Note: Using "lowestPrice" and "countAccommodation" can increase response load time.
+
+###Search method (POST):
+
+    include("curlLib/curlWrap_v1.php");
+
+    // ************************** Get accommodation ********************
+
+    $entity = "search";
+    $input['data'] = array(
+        "accountId" => "2",
+        "apiKey" => "o5ic8IZCZYPGgmgh",
+        "language" => "en",
+        "preview" => "1"
+    );
+    $method = "POST";
+    $contentType = "application/json";
+    $input = json_encode($input);
+
+    $apiResult = curlWrap($entity, $input, $method, $contentType);
+    $apiResult = json_decode($apiResult, TRUE);
+
+    echo '<pre>';
+    print_r($apiResult);
+    echo '</pre>';
+
+"accountID" and "apiKey" are required for all Api calls.
+"language": en me hr si ru de nl fr it cz sk hu pl
+
+"propertyType": "apartment", "hotel", "villa", "authentic accommodation", "youth hostel", "houses with pool", "rooms", "tourist resorts", "holiday houses", "bed and breakfast"
+
+Optional "lowestPrice" parameter load lowest prices for accommodation.
