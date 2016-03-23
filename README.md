@@ -132,8 +132,6 @@ Optional "lowestPrice" parameter load lowest prices for accommodation.
 "language": en me hr si ru de nl fr it cz sk hu pl
 
 Optional "lowestPrice" parameter load lowest prices for accommodation.
-
 Optional "availability" parameter return calendar availability for rooms.
-
 Optional "showUnavailableRooms" parameter return all rooms with message why rooms are not available.
 
