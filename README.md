@@ -1,5 +1,5 @@
-ibookhotel REST API
-===================
+REST API
+========
 
 B2B, B2C and B2S platform for online booking of accommodation, transfers, excursions and rent-a-car.
 
