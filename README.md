@@ -76,7 +76,7 @@ Note: Using "lowestPrice" and "countAccommodation" can increase response load ti
 
     include("curlLib/curlWrap_v1.php");
 
-    // ************************** Get accommodation ********************
+    // ************************** Accommodation listing ********************
 
     $entity = "search";
     $input['data'] = array(
@@ -102,3 +102,38 @@ Note: Using "lowestPrice" and "countAccommodation" can increase response load ti
 "propertyType": "apartment", "hotel", "villa", "authentic accommodation", "youth hostel", "houses with pool", "rooms", "tourist resorts", "holiday houses", "bed and breakfast"
 
 Optional "lowestPrice" parameter load lowest prices for accommodation.
+
+###Details method (POST):
+
+    include("curlLib/curlWrap_v1.php");
+
+    // ************************** Accommodation details ********************
+
+    $entity = "details";
+    $input['data'] = array(
+        "accountId" => "2",
+        "apiKey" => "o5ic8IZCZYPGgmgh",
+        "language" => "en",
+        "propertyId" => "1598",
+        "preview" => "1"
+    );
+    $method = "POST";
+    $contentType = "application/json";
+    $input = json_encode($input);
+
+    $apiResult = curlWrap($entity, $input, $method, $contentType);
+    $apiResult = json_decode($apiResult, TRUE);
+
+    echo '<pre>';
+    print_r($apiResult);
+    echo '</pre>';
+
+"accountID" and "apiKey" are required for all Api calls.
+"language": en me hr si ru de nl fr it cz sk hu pl
+
+Optional "lowestPrice" parameter load lowest prices for accommodation.
+
+Optional "availability" parameter return calendar availability for rooms.
+
+Optional "showUnavailableRooms" parameter return all rooms with message why rooms are not available.
+
