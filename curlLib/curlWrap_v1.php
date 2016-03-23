@@ -1,16 +1,14 @@
 <?php
 
     /**
-     * ibookhotel \ Curl Wrap
+     * Curl Wrap
      *
-     * The Curl Wrap is the entry point to all services and actions.
+     * The Curl Wrap is the entry point to all services.
      */
 
 
     # Enter your domain name , user id and user api key
-    define("REST_DOMAIN", "localhost/jsonapi/public");  # Example : define("REST_DOMAIN","jsonapi/manage-booking.com");
-    define("ACCOUNT_ID", "YOUR_ACCOUNT_ID");
-    define("REST_API_KEY", "YOUR_REST_API_KEY");
+    define("REST_DOMAIN", "jsonapi/manage-booking.com");
 
     function curlWrap($entity, $data, $method, $content_type) {
         if ($content_type == NULL) {
