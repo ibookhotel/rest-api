@@ -6,7 +6,7 @@
      * The Curl Wrap is the entry point to all services.
      */
 
-    define("REST_DOMAIN", "jsonapi/manage-booking.com");
+    define("REST_DOMAIN", "jsonapi.manage-booking.com");
 
     function curlWrap($entity, $data, $method, $content_type) {
         if ($content_type == NULL) {
@@ -50,7 +50,6 @@
             'Accept : application/json'
         ));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_USERPWD, ACCOUNT_ID . ':' . REST_API_KEY);
         curl_setopt($ch, CURLOPT_TIMEOUT, 120);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         $output = curl_exec($ch);
