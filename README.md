@@ -31,7 +31,7 @@ Authentications are performed based on the accountId of the user and the respect
 - apiKey is 16 character length key and it is required for all API calls
 
 ###Endpoints:
-All API requests should be made to: http://jsonapi.manage-booking.com/
+All API requests should be made to: https://restapi.manage-booking.com/
 
 Note: All data is case-sensitive. Language, apiKey and other values are case sensitive. For example, "test" and "Test" are considered two different words.
 
